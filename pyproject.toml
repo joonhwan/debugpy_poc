@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pydebuggee"
+version = "0.1.0"
+description = ""
+authors = ["joonhwan <joonhwan.lee@gmail.com>"]
+
+[tool.poetry.scripts]
+debugpy = 'debugpy.server.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+debugpy = "^1.4.1"
+black = {version = "^21.7b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
